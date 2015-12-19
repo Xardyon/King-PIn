@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: 0f7cf3daa10fb4fae82855e3dbda6ef2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Human.001
+    100002: Worker
+    100004: //RootNode
+    100006: Worker|Arm IK.L
+    100008: Worker|Arm IK.R
+    100010: Worker|Chest
+    100012: Worker|Control
+    100014: Worker|Elbow.L
+    100016: Worker|Elbow.R
+    100018: Worker|Foot.L
+    100020: Worker|Foot.R
+    100022: Worker|Head
+    100024: Worker|Knee.L
+    100026: Worker|Knee.R
+    100028: Worker|Leg IK.L
+    100030: Worker|Leg IK.R
+    100032: Worker|Lower Arm.L
+    100034: Worker|Lower Arm.R
+    100036: Worker|Lower Leg.L
+    100038: Worker|Lower Leg.R
+    100040: Worker|Stomach
+    100042: Worker|Upper Arm.L
+    100044: Worker|Upper Arm.R
+    100046: Worker|Upper Leg.L
+    100048: Worker|Upper Leg.R
+    400000: Human.001
+    400002: Worker
+    400004: //RootNode
+    400006: Worker|Arm IK.L
+    400008: Worker|Arm IK.R
+    400010: Worker|Chest
+    400012: Worker|Control
+    400014: Worker|Elbow.L
+    400016: Worker|Elbow.R
+    400018: Worker|Foot.L
+    400020: Worker|Foot.R
+    400022: Worker|Head
+    400024: Worker|Knee.L
+    400026: Worker|Knee.R
+    400028: Worker|Leg IK.L
+    400030: Worker|Leg IK.R
+    400032: Worker|Lower Arm.L
+    400034: Worker|Lower Arm.R
+    400036: Worker|Lower Leg.L
+    400038: Worker|Lower Leg.R
+    400040: Worker|Stomach
+    400042: Worker|Upper Arm.L
+    400044: Worker|Upper Arm.R
+    400046: Worker|Upper Leg.L
+    400048: Worker|Upper Leg.R
+    4300000: Human.001
+    7400000: Worker|Attack
+    7400002: Attack
+    7400004: Death
+    7400006: Worker|Death.001
+    7400008: Idle
+    7400010: Walk
+    7400012: Worker|Walk.001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Human.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack
+      takeName: Worker|Attack.001
+      firstFrame: 0
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.001
+        weight: 1
+      - path: Worker
+        weight: 1
+      - path: Worker/Worker|Control
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L/Worker|Foot.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R/Worker|Foot.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest/Worker|Head
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L/Worker|Lower
+          Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R/Worker|Lower
+          Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L/Worker|Lower
+          Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R/Worker|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Worker|Death
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.001
+        weight: 1
+      - path: Worker
+        weight: 1
+      - path: Worker/Worker|Control
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L/Worker|Foot.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R/Worker|Foot.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest/Worker|Head
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L/Worker|Lower
+          Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R/Worker|Lower
+          Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L/Worker|Lower
+          Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R/Worker|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Worker|Idle
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.001
+        weight: 1
+      - path: Worker
+        weight: 1
+      - path: Worker/Worker|Control
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L/Worker|Foot.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R/Worker|Foot.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest/Worker|Head
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L/Worker|Lower
+          Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R/Worker|Lower
+          Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L/Worker|Lower
+          Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R/Worker|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Worker|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.001
+        weight: 1
+      - path: Worker
+        weight: 1
+      - path: Worker/Worker|Control
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Arm IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Elbow.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Knee.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.L/Worker|Foot.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Leg IK.R/Worker|Foot.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Chest/Worker|Head
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.L/Worker|Lower
+          Arm.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Arm.R/Worker|Lower
+          Arm.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.L/Worker|Lower
+          Leg.L
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R
+        weight: 1
+      - path: Worker/Worker|Control/Worker|Stomach/Worker|Upper Leg.R/Worker|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

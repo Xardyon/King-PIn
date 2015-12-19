@@ -1,0 +1,62 @@
+Version 3.3 :
+		Procedural terrain, blending with manual terrain, forests on procedural
+terrain.
+		Formations and Grouping system.
+--------------------------------------------------------------------------------------
+Version 3.2 :
+		Dynamic UI implementation with various UI improvements.
+		Several important bug fixes in core system (enemy searches and unit selection 
+mostly), which were noticed during long runs.
+--------------------------------------------------------------------------------------
+Version 3.1 :
+		Added 4 AIs system, responsible for high level economical,
+military and diplomatic decisions and its balance for non-player
+based nations.
+--------------------------------------------------------------------------------------
+Version 3.0 :
+        Unity 5 support
+        Added RTS Compiler to ease toolkit set-up on empty scenes from
+scratch.
+--------------------------------------------------------------------------------------
+Version 2.1 :
+        Added support for usage of 3dSprites together with 3d models.
+--------------------------------------------------------------------------------------
+Version 2.0 :
+		Huge GUI update, which brings menus and buttons.
+		Resource creation and collection system.
+		Forrest generator.
+		11 buildings (with some functionalities) and 4 units.
+		Several bug fixes.
+
+--------------------------------------------------------------------------------------
+Version 1.6 :
+        Grey environment was replaced with more friendly grassland surface.
+        Included selection marks and health bars for units.
+        Added L-Systems tree generator.
+
+--------------------------------------------------------------------------------------
+Version 1.5 :
+ 	Big performance update for 3dSprites.
+ 	3dSprites now supports multiple models and animations in the scene.
+ 	
+--------------------------------------------------------------------------------------
+Version 1.4 :
+ 	Added 3dSprites feature.
+
+--------------------------------------------------------------------------------------
+Version 1.3 :
+        Added archery support.
+        Improved diplomacy now support unlimited amount of nations placed on the map.
+        Updated search algorithm now keep searching for another NN if the first one is busy.
+        Basic knight character models are included for testing purposes.
+        
+--------------------------------------------------------------------------------------
+Version 1.2 :
+	Added diplomacy support with working peace and war options.
+	Added units selection by click and by rectangle.
+	Added integrated selected units manual movement and attacking system.
+	Removed fake objects entities from simulator.
+
+--------------------------------------------------------------------------------------
+Version 1.1 : Initial version
+--------------------------------------------------------------------------------------

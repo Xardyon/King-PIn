@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HOTools</name>
+    </assembly>
+    <members>
+        <member name="M:Holoville.HOTools.Tools.CreateComponentsIconsTool.Draw(UnityEditor.EditorWindow)">
+            <summary>
+            Returns a delegate to this same method if this tool should own the whole panel
+            (like when a subpanel is opened exclusively for this tool).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.MultiCollectionTool.Draw(UnityEditor.EditorWindow)">
+            <summary>
+            Returns a delegate to this same method if this tool should own the whole panel
+            (like when a subpanel is opened exclusively for this tool).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.MultiCollectionTool.ValidateDragAndDrop">
+            <summary>
+            Filters the curren DragAndDrop contents to remove already stored objects,
+            and returns TRUE if something remains.
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.MultiCollectionTool.FilterDragAndDrop">
+            <summary>
+            Filters the curren DragAndDrop contents to remove already stored objects,
+            and returns a list with the valid references.
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.MultiCollectionTool.OnProjectWindowGUI(System.String,UnityEngine.Rect)">
+            <summary>
+            Used to prevent dragging stuff from MultiCollection to ProjectWindow.
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Data.Src.ResetTempData">
+            <summary>
+            Resets all the non-serialized data that was used temporarily.
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.ColorCollectionTool.Draw(UnityEditor.EditorWindow)">
+            <summary>
+            Returns a delegate to this same method if this tool should own the whole panel
+            (like when a subpanel is opened exclusively for this tool).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.ColorCollectionTool.GetColorFromString(System.String)">
+            <summary>
+            Color string must be formatted as [n, n, n, n] (with or without spaces).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.BreakSelectedPrefabsTool.Draw(UnityEditor.EditorWindow)">
+            <summary>
+            Returns a delegate to this same method if this tool should own the whole panel
+            (like when a subpanel is opened exclusively for this tool).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tabs.SettingsTab.Init">
+            <summary>
+            Called by <see cref="T:Holoville.HOTools.HOToolsWindow"/> each time this tab is selected.
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.CreateQuadTool.Draw(UnityEditor.EditorWindow)">
+            <summary>
+            Returns a delegate to this same method if this tool should own the whole panel
+            (like when a subpanel is opened exclusively for this tool).
+            </summary>
+        </member>
+        <member name="M:Holoville.HOTools.Tools.CreateQuadTool.MakeQuad(System.Single,System.Single,System.Single,System.Single,UnityEngine.TextAnchor)">
+            <summary>
+            Creates a quad facing the negative Z direction.
+            </summary>
+            <param name="width">Quad width</param>
+            <param name="height">Quad height</param>
+            <param name="uvHorPerc">UV horizontal stretch percentage (0 to 1)</param>
+            <param name="uvVertPerc">UV vertical stretch percentage (0 to 1)</param>
+            <param name="alignment">Pivot alignment</param>
+            <returns></returns>
+        </member>
+        <member name="T:Holoville.HOTools.HOToolsWindow">
+            <summary>
+            HOTools window.
+            </summary>
+        </member>
+    </members>
+</doc>

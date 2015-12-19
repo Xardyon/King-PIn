@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 12cb4dd353ae74af8b68a5ffefafbb1d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Human.002
+    100002: swordsman
+    100004: swordsman|Arm IK.L
+    100006: swordsman|Arm IK.R
+    100008: swordsman|Chest
+    100010: swordsman|Control
+    100012: swordsman|Elbow.L
+    100014: swordsman|Elbow.R
+    100016: swordsman|Foot.L
+    100018: swordsman|Foot.R
+    100020: swordsman|Head
+    100022: swordsman|Knee.L
+    100024: swordsman|Knee.R
+    100026: swordsman|Leg IK.L
+    100028: swordsman|Leg IK.R
+    100030: swordsman|Lower Arm.L
+    100032: swordsman|Lower Arm.R
+    100034: swordsman|Lower Leg.L
+    100036: swordsman|Lower Leg.R
+    100038: swordsman|Stomach
+    100040: swordsman|Upper Arm.L
+    100042: swordsman|Upper Arm.R
+    100044: swordsman|Upper Leg.L
+    100046: swordsman|Upper Leg.R
+    100048: //RootNode
+    400000: Human.002
+    400002: swordsman
+    400004: swordsman|Arm IK.L
+    400006: swordsman|Arm IK.R
+    400008: swordsman|Chest
+    400010: swordsman|Control
+    400012: swordsman|Elbow.L
+    400014: swordsman|Elbow.R
+    400016: swordsman|Foot.L
+    400018: swordsman|Foot.R
+    400020: swordsman|Head
+    400022: swordsman|Knee.L
+    400024: swordsman|Knee.R
+    400026: swordsman|Leg IK.L
+    400028: swordsman|Leg IK.R
+    400030: swordsman|Lower Arm.L
+    400032: swordsman|Lower Arm.R
+    400034: swordsman|Lower Leg.L
+    400036: swordsman|Lower Leg.R
+    400038: swordsman|Stomach
+    400040: swordsman|Upper Arm.L
+    400042: swordsman|Upper Arm.R
+    400044: swordsman|Upper Leg.L
+    400046: swordsman|Upper Leg.R
+    400048: //RootNode
+    4300000: Human.002
+    7400000: Attack
+    7400002: swordsman|Attack
+    7400004: Death
+    7400006: swordsman|Death.001
+    7400008: Idle
+    7400010: swordsman|Idle.001
+    7400012: Walk
+    7400014: swordsman|Walk.001
+    7400016: swordsman|Walk.002
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Human.002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack
+      takeName: swordsman|Attack.001
+      firstFrame: 0
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.002
+        weight: 1
+      - path: swordsman
+        weight: 1
+      - path: swordsman/swordsman|Control
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L/swordsman|Foot.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R/swordsman|Foot.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest/swordsman|Head
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L/swordsman|Lower
+          Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R/swordsman|Lower
+          Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L/swordsman|Lower
+          Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R/swordsman|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: swordsman|Death
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.002
+        weight: 1
+      - path: swordsman
+        weight: 1
+      - path: swordsman/swordsman|Control
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L/swordsman|Foot.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R/swordsman|Foot.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest/swordsman|Head
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L/swordsman|Lower
+          Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R/swordsman|Lower
+          Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L/swordsman|Lower
+          Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R/swordsman|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: swordsman|Idle
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.002
+        weight: 1
+      - path: swordsman
+        weight: 1
+      - path: swordsman/swordsman|Control
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L/swordsman|Foot.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R/swordsman|Foot.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest/swordsman|Head
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L/swordsman|Lower
+          Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R/swordsman|Lower
+          Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L/swordsman|Lower
+          Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R/swordsman|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: swordsman|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.002
+        weight: 1
+      - path: swordsman
+        weight: 1
+      - path: swordsman/swordsman|Control
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Arm IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Elbow.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Knee.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.L/swordsman|Foot.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Leg IK.R/swordsman|Foot.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Chest/swordsman|Head
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.L/swordsman|Lower
+          Arm.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Arm.R/swordsman|Lower
+          Arm.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.L/swordsman|Lower
+          Leg.L
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R
+        weight: 1
+      - path: swordsman/swordsman|Control/swordsman|Stomach/swordsman|Upper Leg.R/swordsman|Lower
+          Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

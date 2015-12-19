@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueprintBuildRequest</name>
+    </assembly>
+    <members>
+        <member name="T:TechTree.BlueprintBuildRequest">
+            <summary>
+            The blueprint build request is used to determine the result of a Build method call, and is also used
+            in your game code to determine when the unit constructed from the blueprint is finished.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintBuildRequest.status">
+            <summary>
+            The status of the build, make sure to check this for errors. If successful, you need to check
+            the Complete flag or percentComplete field to determine when the unit construction time has elapsed.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintBuildRequest.blueprint">
+            <summary>
+            The blueprint used to build the unit.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintBuildRequest.prerequisite">
+            <summary>
+            If this build request has a failure state, this is the prerequisite that could not be satisfied.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintBuildRequest.percentComplete">
+            <summary>
+            A value between 0 and 1 which is the progress towards completion of the unit.
+            </summary>
+        </member>
+        <member name="P:TechTree.BlueprintBuildRequest.Complete">
+            <summary>
+            Gets a value indicating whether this build request is completed.
+            </summary>
+        </member>
+        <member name="T:TechTree.BlueprintController">
+            <summary>
+            The BlueprintController wraps the Blueprint class. This is so you can have multiple instances of
+            a blueprint (eg multiple soldiers, turrets) and also share the one blueprint model among multiple
+            players in a single game. This class is used to build units from blueprints.
+            There is one controller per blueprint, and it contains information that is shared between all the
+            units it builds.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintController.units">
+            <summary>
+            All units built by this controller.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintController.blueprint">
+            <summary>
+            The blueprint being used by this class to create units.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintController.buildCount">
+            <summary>
+            How many units have been built from this bp.
+            </summary>
+        </member>
+        <member name="P:TechTree.BlueprintController.HasBeenBuilt">
+            <summary>
+            Gets a value indicating whether this blueprint has been built during the game session. The first time
+            a unit is built with this controller, the value will become true. If enough Demolish calls are
+            made, this flag can become false.
+            </summary>
+            <value>
+                <c>true</c> if this instance has been built; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TechTree.BlueprintController.CanBeBuilt">
+            <summary>
+            Indicates whether this controller is able to be built, by checking that all prerequistes are met.
+            Does not check if enough resources are available.
+            </summary>
+            <value>
+                <c>true</c> if this instance can be built; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TechTree.BlueprintController.IsBuilding">
+            <summary>
+            Gets a value indicating whether this instance is building.
+            </summary>
+            <value>
+                <c>true</c> if this instance is building; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TechTree.BlueprintController.Excluded">
+            <summary>
+            Gets a value indicating whether this <see cref="T:TechTree.BlueprintController" /> is excluded. A blueprint is excluded when it depends on a Mutex blueprint, and was not chosen to be built.
+            </summary>
+            <value>
+                <c>true</c> if excluded; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:TechTree.BlueprintController.GetFactoryBlueprints">
+            <summary>
+            If this blueprint is for a factory, returns all possible blueprint controllers that this factory can
+            build. If this blueprint is not for a factory, an exception is raised.
+            </summary>
+        </member>
+        <member name="M:TechTree.BlueprintController.CreateBuildRequest(TechTreeUnit,System.String)">
+            <summary>
+            Using a blueprint specified by ID, returns a build request. The build request will contain the
+            gameobject and sprite specified in the model.
+            </summary>
+            <returns>The build request.</returns>
+        </member>
+        <member name="T:TechTree.BlueprintModelController">
+            <summary>
+            The BlueprintModelController takes the blueprint model and uses it to track which units have been built
+            at runtime, for a particular player.
+            It provides access to factories, which is how blueprints can be built.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintModelController.groups">
+            <summary>
+            Controllers for the Blueprint groups in the model.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintModelController.blueprints">
+            <summary>
+            Controllers for the Blueprints in the model.
+            </summary>
+        </member>
+        <member name="F:TechTree.BlueprintModelController.resources">
+            <summary>
+            Controllers for the Resources in the model.
+            </summary>
+        </member>
+        <member name="M:TechTree.BlueprintModelController.GetFactories">
+            <summary>
+            Get all possible factories from the model.
+            </summary>
+        </member>
+        <member name="M:TechTree.BlueprintModelController.GetFactory(System.String)">
+            <summary>
+            Gets a particular factory by ID from the model.
+            </summary>
+        </member>
+        <member name="T:TechTree.BuildStatus">
+            <summary>
+            This enum is used to show whether a build request is successful, and if not why it failed.
+            </summary>
+        </member>
+        <member name="T:TechTree.ResourceController">
+            <summary>
+            The Resource controller is used at runtime to control the resources for each player.
+            </summary>
+        </member>
+        <member name="P:TechTree.ResourceController.qty">
+            <summary>
+            Gets the qty of this resource that is available to be used in building units.
+            </summary>
+        </member>
+        <member name="M:TechTree.ResourceController.Take(System.Single)">
+            <summary>
+            Consume some of the resource.
+            </summary>
+        </member>
+        <member name="M:TechTree.ResourceController.Give(System.Single)">
+            <summary>
+            Create an amount of the resource.
+            </summary>
+        </member>
+        <member name="F:TechTreeFactory.blueprints">
+            <summary>
+            The blueprints that are built by this factory.
+            </summary>
+        </member>
+        <member name="P:TechTreeFactory.BuildQueue">
+            <summary>
+            Gets the build queue.
+            </summary>
+        </member>
+        <member name="M:TechTreeFactory.CleanBuildQueue">
+            <summary>
+            Remove completed items from the BuildQueue.
+            </summary>
+        </member>
+        <member name="M:TechTreeFactory.CanBuild(TechTree.BlueprintController)">
+            <summary>
+            Can this factory build this blueprint?
+            </summary>
+        </member>
+        <member name="M:TechTreeFactory.Build(System.String)">
+            <summary>
+            Build the unit specified by blueprint ID. Only works if this unit is a factory.
+            </summary>
+            <param name="ID">I.</param>
+        </member>
+        <member name="T:TechTreeUnit">
+            <summary>
+            The TechTreeUnit class contains all information unique to an instance of
+            something built using the BlueprintController.
+            </summary>
+        </member>
+        <member name="F:TechTreeUnit.hasEnoughResources">
+            <summary>
+            If this unit consumes resources after being built, does it have enough resources?
+            </summary>
+        </member>
+        <member name="P:TechTreeUnit.Level">
+            <summary>
+            //This is the upgrade level of the unit. Unit levels always start at the level of the factory that built them.
+            </summary>
+        </member>
+        <member name="P:TechTreeUnit.CanUpgrade">
+            <summary>
+            Gets a value indicating whether this unit can upgrade.
+            </summary>
+        </member>
+        <member name="M:TechTreeUnit.PerformUpgrade">
+            <summary>
+            Upgrades this unit to the next level.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.Blueprint">
+            <summary>
+            The Blueprint is the basic unit of construction. It defines things which can be
+            built, researched or achieved. Blueprints belong to a BlueprintGroup, and can require
+            other Blueprint classes to be built first.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.ID">
+            <summary>
+            The unique ID of this blueprint. This is used to lookup a blueprint in your game source code.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.constructTime">
+            <summary>
+            The number of seconds needed to build this blueprint.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.isFactory">
+            <summary>
+            If true, this blueprint produces a factory unit. A factory unit is used to produce other units from it's list of blueprints.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.gameObject">
+            <summary>
+            Your GameObject prefab for this blueprint, which can be used at runtime in your game.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.sprite">
+            <summary>
+            The sprite attached to this blueprint, used at runtime along with the gameObject.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.prerequisites">
+            <summary>
+            The list of other blueprints that must be built before this blueprint can be built.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.costs">
+            <summary>
+            A list of resources and costs required to build this blueprint.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.resourceProductionRates">
+            <summary>
+            /// A list of resources which the unit created by this blueprint will produce.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.resourceConsumptionRates">
+            <summary>
+            /// A list of resources which the unit created by this blueprint will consume while it is enabled.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.factory">
+            <summary>
+            If this is a factory blueprint, the blueprints that can be built are specified in this class.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.allowMultiple">
+            <summary>
+            Allow multiple builds of this blueprint, used for destroyable units.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.prebuilt">
+            <summary>
+            If available is set to true, this blueprint is automatically constructed into a unit when the game starts. This is used for the root level factory blueprints which will construct all other blueprints.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.mutex">
+            <summary>
+            If true, only one of the child branches can be built. This forces the user to make strategic decisions which require advance planning.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.requiredFactoryLevel">
+            <summary>
+            The required level of the factory used to build this unit.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.rect">
+            <summary>
+            EDITOR ONLY: This is the rect position of the blueprint in the editor.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.group">
+            <summary>
+            The group the blueprint belongs to.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.isUpgradeable">
+            <summary>
+            The unit is upgradeable.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.inheritFactoryLevel">
+            <summary>
+            The unit will inherit the factory that produced it.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Blueprint.upgradeCosts">
+            <summary>
+            List of costs required to upgrade to the next level.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.BlueprintGroup">
+            <summary>
+            The Blueprint group categorises related blueprints together. For example you might have a group for a
+            Research Tree, a Group for building physical structures and a group for building mobile units.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.BlueprintModel">
+            <summary>
+            The blueprint model is used to contain all data about the design of your blueprint trees.
+            At runtime it is referenced by a controller which provides access to the blueprints and
+            facilitates construction of units from the blueprints.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.BlueprintModel.resources">
+            <summary>
+            List of resources available to use when building a blueprint.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.BlueprintModel.groups">
+            <summary>
+            The categories of blueprints.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.Factory">
+            <summary>
+            The Factory class lists all possible blueprints that can be built by the parent unit.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Factory.type">
+            <summary>
+            The type of factory, a SingleQueue factory builds units one a time, whereas a
+            ParallelQueue builds units simultaneously on demand.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Factory.blueprints">
+            <summary>
+            The list of blueprints which are built by this factory.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.Resource">
+            <summary>
+            The Resource class is used to store details about your game 'resources'. For example Credits,
+            Energy etc. These resources allow blueprints to costs a certain amount when being built.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.ID">
+            <summary>
+            Unique ID of the resource.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.color">
+            <summary>
+            The color used to identify the resource in the editor.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.qty">
+            <summary>
+            The starting quantity of the resource.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.gameObject">
+            <summary>
+            A generic game object you can use to represent the resource.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.autoReplenishRate">
+            <summary>
+            The rate, per second, that this resource will replenish at runtime.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.hasMaximumCapacity">
+            <summary>
+            If true, this resource is capped at a certain value.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.maximumCapacity">
+            <summary>
+            The maximum capacity of this resource.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.Resource.maxPossibleCost">
+            <summary>
+            The maximum cost a blueprint can use from this resource.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.ResourceCost">
+            <summary>
+            The Resource Cost class is used to store cost per resource information for a blueprint.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.ResourceCost.resource">
+            <summary>
+            The resource used for this cost.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.ResourceCost.qty">
+            <summary>
+            The qty taken from the resource when the parent blueprint is built.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.UnitStat">
+            <summary>
+            The UnitStat class is used to store runtime values of different things for units.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.UnitStat.ID">
+            <summary>
+            Unique ID of the stat.
+            </summary>
+        </member>
+        <member name="F:TechTree.Model.UnitStat.color">
+            <summary>
+            The color used to identify the stat in the editor.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.UnitStatValue">
+            <summary>
+            The UnitStat class is used to store runtime values of different things for units.
+            </summary>
+        </member>
+        <member name="T:TechTree.Model.UpgradeCost">
+            <summary>
+            The Upgrade Cost class is used to store cost per resource to upgrade a unit produced by a blueprint.
+            </summary>
+        </member>
+    </members>
+</doc>

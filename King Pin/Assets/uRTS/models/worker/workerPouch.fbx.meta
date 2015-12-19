@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: a3458943ed7b7482cbc88f86083c423c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Human.005
+    100002: WorkerPouch
+    100004: //RootNode
+    100006: WorkerPouch|Arm IK.L
+    100008: WorkerPouch|Arm IK.R
+    100010: WorkerPouch|Chest
+    100012: WorkerPouch|Control
+    100014: WorkerPouch|Elbow.L
+    100016: WorkerPouch|Elbow.R
+    100018: WorkerPouch|Foot.L
+    100020: WorkerPouch|Foot.R
+    100022: WorkerPouch|Head
+    100024: WorkerPouch|Knee.L
+    100026: WorkerPouch|Knee.R
+    100028: WorkerPouch|Leg IK.L
+    100030: WorkerPouch|Leg IK.R
+    100032: WorkerPouch|Lower Arm.L
+    100034: WorkerPouch|Lower Arm.R
+    100036: WorkerPouch|Lower Leg.L
+    100038: WorkerPouch|Lower Leg.R
+    100040: WorkerPouch|Stomach
+    100042: WorkerPouch|Upper Arm.L
+    100044: WorkerPouch|Upper Arm.R
+    100046: WorkerPouch|Upper Leg.L
+    100048: WorkerPouch|Upper Leg.R
+    400000: Human.005
+    400002: WorkerPouch
+    400004: //RootNode
+    400006: WorkerPouch|Arm IK.L
+    400008: WorkerPouch|Arm IK.R
+    400010: WorkerPouch|Chest
+    400012: WorkerPouch|Control
+    400014: WorkerPouch|Elbow.L
+    400016: WorkerPouch|Elbow.R
+    400018: WorkerPouch|Foot.L
+    400020: WorkerPouch|Foot.R
+    400022: WorkerPouch|Head
+    400024: WorkerPouch|Knee.L
+    400026: WorkerPouch|Knee.R
+    400028: WorkerPouch|Leg IK.L
+    400030: WorkerPouch|Leg IK.R
+    400032: WorkerPouch|Lower Arm.L
+    400034: WorkerPouch|Lower Arm.R
+    400036: WorkerPouch|Lower Leg.L
+    400038: WorkerPouch|Lower Leg.R
+    400040: WorkerPouch|Stomach
+    400042: WorkerPouch|Upper Arm.L
+    400044: WorkerPouch|Upper Arm.R
+    400046: WorkerPouch|Upper Leg.L
+    400048: WorkerPouch|Upper Leg.R
+    4300000: Human.005
+    7400000: WorkerPouch|Attack
+    7400002: WorkerPouch|Attack.001
+    7400004: WorkerPouch|Death
+    7400006: DeathPouch
+    7400008: WorkerPouch|Idle
+    7400010: IdlePouch
+    7400012: WorkerPouch|Walk
+    7400014: WorkerPouch|Walk.001
+    7400016: WorkerPouch|Walk.002
+    7400018: WalkPouch
+    7400020: WorkerPouch|WalkPouch.001
+    7400022: WorkerPouch|WalkPouch.002
+    7400024: WorkerPouch|WalkPouch.003
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Human.005
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DeathPouch
+      takeName: WorkerPouch|DeathPouch
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.005
+        weight: 1
+      - path: WorkerPouch
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L/WorkerPouch|Foot.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R/WorkerPouch|Foot.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest/WorkerPouch|Head
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L/WorkerPouch|Lower Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R/WorkerPouch|Lower Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L/WorkerPouch|Lower Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R/WorkerPouch|Lower Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: IdlePouch
+      takeName: WorkerPouch|IdlePouch
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.005
+        weight: 1
+      - path: WorkerPouch
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L/WorkerPouch|Foot.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R/WorkerPouch|Foot.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest/WorkerPouch|Head
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L/WorkerPouch|Lower Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R/WorkerPouch|Lower Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L/WorkerPouch|Lower Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R/WorkerPouch|Lower Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: WalkPouch
+      takeName: WorkerPouch|WalkPouch
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human.005
+        weight: 1
+      - path: WorkerPouch
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Arm IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Elbow.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Knee.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.L/WorkerPouch|Foot.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Leg IK.R/WorkerPouch|Foot.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Chest/WorkerPouch|Head
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.L/WorkerPouch|Lower Arm.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Arm.R/WorkerPouch|Lower Arm.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.L/WorkerPouch|Lower Leg.L
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R
+        weight: 1
+      - path: WorkerPouch/WorkerPouch|Control/WorkerPouch|Stomach/WorkerPouch|Upper
+          Leg.R/WorkerPouch|Lower Leg.R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
