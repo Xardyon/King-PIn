@@ -1,0 +1,45 @@
+22
+Sphere
+GameObject/3D Object/Sphere
+Cube
+GameObject/3D Object/Cube
+Plane
+GameObject/3D Object/Plane
+Capsule
+GameObject/3D Object/Capsule
+DL
+GameObject/Light/Directional Light
+PL
+GameObject/Light/Point Light
+SL
+GameObject/Light/Spotlight
+Audio
+GameObject/Audio/Audio Source
+Camera
+GameObject/Camera
+Align View
+GameObject/Align View to Selected
+Parent
+GameObject/Make Parent
+Event
+GameObject/UI/Event System
+Canvas
+GameObject/UI/Canvas
+UI Panel
+GameObject/UI/Panel
+UI Button
+GameObject/UI/Button
+UI Image
+GameObject/UI/Image
+UI Text
+GameObject/UI/Text
+UI Slider
+GameObject/UI/Slider
+UI TMP Text
+GameObject/UI/TextMeshPro Text
+Empty GO
+GameObject/Create Empty
+EBT Filled
+GameObject/UI/Energy Bar Toolkit/Filled Bar
+EBT Repeated
+GameObject/UI/Energy Bar Toolkit/Repeated Bar
